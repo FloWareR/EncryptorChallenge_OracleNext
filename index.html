@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3NCRYPT0R</title>
-  <script src="index.js"></script>
+  <script async src="index.js"></script>
   <link rel="icon" type="image/x-icon" href="assets/lock.png">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
@@ -12,19 +12,27 @@
 <body>
   <Header>
       <img id="logo" src="assets/lock.png" alt="a">
-    <h1>Text encryptor</h1>
+      <h1>Text encryptor</h1>
+      <h3 id="copyAlert" class="disable">Copied to clipboard!</h3>
   </Header>
   <main>
     <div class="container-left">
       <textarea name="text" placeholder="Your text here..." maxlength='500' id="input-area" cols="30" rows="10"></textarea>
       <p> &#9888 LOWERCASE ONLY</p>
       <div id="button-container">
-        <button type="button">Encrypt</button>
-        <button type="button">Decrypt</button>
+        <button onClick="encrypt();" type="button">Encrypt</button>
+        <button onClick="decrypt();" type="button">Decrypt</button>
       </div>
     </div>
     <div class="container-right">
-      <p id="output-area">Test Tex</p>
+      <div class="output-area">
+        <div class="placeholder">
+          <img src="assets/search.png" alt="instagram">
+          <p>Nothing here... for now</p>
+        </div>
+        <p id="output"></p>
+      </div>
+      <button class="disable" id="copyButton" onClick="copyText();">Copy</button>
     </div>
   </main>
 <footer>
