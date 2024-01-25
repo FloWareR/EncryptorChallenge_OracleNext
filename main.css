@@ -111,6 +111,7 @@ main{
 .placeholder p{
   background-color: #fafafa;
 }
+
 #output{
   background-color: #fafafa;
 }
@@ -139,7 +140,7 @@ main{
 }
 
 footer{
-  height: 12.3%;
+  height: auto;
   background-color: #12082b31;
   display: flex;
   justify-content: center;
@@ -161,6 +162,7 @@ footer p{
   background-color: #12082b00;
   font-size: 2rem;
   font-weight: 600;
+  padding: 3.1rem 0 3.1rem 0;
 }
 
 .enable{
