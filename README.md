@@ -1,1 +1,2 @@
-<h1>This repository contains all the challenges from Alura Oracle Next Education program</h1>
+<h1>Oracle Next Education</h1>
+
